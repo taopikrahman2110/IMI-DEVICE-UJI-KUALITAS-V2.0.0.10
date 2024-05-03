@@ -1,0 +1,15 @@
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\bin\Release\MRZReader.exe.config
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\bin\Release\MRZReader.exe
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\bin\Release\MMMReaderDotNet40.dll
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\Release\MRZReader.csproj.AssemblyReference.cache
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\Release\MRZReader.AlokasiUlang.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\Release\MRZReader.CatatNomor.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\Release\HLNonBlockingExample.NET.DataToSend.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\Release\MRZReader.EditForm.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\Release\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\Release\HLNonBlockingExample.NET.MainForm.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\Release\MRZReader.ZoomPreview.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\Release\MRZReader.csproj.GenerateResource.cache
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\Release\MRZReader.csproj.CoreCompileInputs.cache
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\Release\MRZReader.csproj.CopyComplete
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\Release\MRZReader.exe

@@ -1,0 +1,20 @@
+C:\Program Files (x86)\3M\3M Page Reader\3.3.2.7\SDK\Samples\DotNET\HLNonBlockingExample.NET2\bin\Debug\HLNonBlockingExample.NET-2k10.exe
+C:\Program Files (x86)\3M\3M Page Reader\3.3.2.7\SDK\Samples\DotNET\HLNonBlockingExample.NET2\bin\Debug\HLNonBlockingExample.NET-2k10.pdb
+C:\Program Files (x86)\3M\3M Page Reader\3.3.2.7\SDK\Samples\DotNET\HLNonBlockingExample.NET2\bin\Debug\MMMReaderDotNet20.dll
+C:\Program Files (x86)\3M\3M Page Reader\3.3.2.7\SDK\Samples\DotNET\HLNonBlockingExample.NET2\obj\Debug\HLNonBlockingExample.NET.DataToSend.resources
+C:\Program Files (x86)\3M\3M Page Reader\3.3.2.7\SDK\Samples\DotNET\HLNonBlockingExample.NET2\obj\Debug\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+C:\Program Files (x86)\3M\3M Page Reader\3.3.2.7\SDK\Samples\DotNET\HLNonBlockingExample.NET2\obj\Debug\HLNonBlockingExample.NET.MainForm.resources
+C:\Program Files (x86)\3M\3M Page Reader\3.3.2.7\SDK\Samples\DotNET\HLNonBlockingExample.NET2\obj\Debug\HLNonBlockingExample.NET-2k10.csproj.GenerateResource.Cache
+C:\Program Files (x86)\3M\3M Page Reader\3.3.2.7\SDK\Samples\DotNET\HLNonBlockingExample.NET2\obj\Debug\HLNonBlockingExample.NET-2k10.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\3M\3M Page Reader\3.3.2.7\SDK\Samples\DotNET\HLNonBlockingExample.NET2\obj\Debug\HLNonBlockingExample.NET-2k10.exe
+C:\Program Files (x86)\3M\3M Page Reader\3.3.2.7\SDK\Samples\DotNET\HLNonBlockingExample.NET2\obj\Debug\HLNonBlockingExample.NET-2k10.pdb
+C:\Program Files (x86)\3M\3M Page Reader\3.3.2.7\SDK\Samples\DotNET\HLNonBlockingExample.NET2\obj\Debug\HLNonBlockingExample.NET-2k10.csprojResolveAssemblyReference.cache
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\bin\Debug\HLNonBlockingExample.NET-2k10.exe
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\bin\Debug\HLNonBlockingExample.NET-2k10.pdb
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\HLNonBlockingExample.NET.DataToSend.resources
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\HLNonBlockingExample.NET.MainForm.resources
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\HLNonBlockingExample.NET-2k10.csproj.GenerateResource.Cache
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\HLNonBlockingExample.NET-2k10.csproj.CoreCompileInputs.cache
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\HLNonBlockingExample.NET-2k10.exe
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\HLNonBlockingExample.NET-2k10.pdb

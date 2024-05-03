@@ -1,0 +1,67 @@
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\bin\x86\Debug\MRZReader.exe.config
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\bin\x86\Debug\MRZReader.exe
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\bin\x86\Debug\MRZReader.pdb
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\bin\x86\Debug\MMMReaderDotNet40.dll
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\x86\Debug\MRZReader.csprojAssemblyReference.cache
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\x86\Debug\MRZReader.AlokasiUlang.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\x86\Debug\MRZReader.CatatNomor.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\x86\Debug\HLNonBlockingExample.NET.DataToSend.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\x86\Debug\MRZReader.EditForm.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\x86\Debug\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\x86\Debug\HLNonBlockingExample.NET.MainForm.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\x86\Debug\MRZReader.ZoomPreview.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\x86\Debug\MRZReader.csproj.GenerateResource.cache
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\x86\Debug\MRZReader.csproj.CoreCompileInputs.cache
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\x86\Debug\MRZReader.csproj.CopyComplete
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\x86\Debug\MRZReader.exe
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\x86\Debug\MRZReader.pdb
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\bin\x86\Debug\MRZReader.exe.config
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\bin\x86\Debug\MRZReader.exe
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\bin\x86\Debug\MRZReader.pdb
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\bin\x86\Debug\MMMReaderDotNet40.dll
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\obj\x86\Debug\MRZReader.csprojAssemblyReference.cache
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\obj\x86\Debug\MRZReader.AlokasiUlang.resources
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\obj\x86\Debug\MRZReader.CatatNomor.resources
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\obj\x86\Debug\HLNonBlockingExample.NET.DataToSend.resources
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\obj\x86\Debug\MRZReader.EditForm.resources
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\obj\x86\Debug\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\obj\x86\Debug\HLNonBlockingExample.NET.MainForm.resources
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\obj\x86\Debug\MRZReader.ZoomPreview.resources
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\obj\x86\Debug\MRZReader.csproj.GenerateResource.cache
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\obj\x86\Debug\MRZReader.csproj.CoreCompileInputs.cache
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\obj\x86\Debug\MRZReader.csproj.CopyComplete
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\obj\x86\Debug\MRZReader.exe
+E:\aplikasi-desktop-paspor\Uji Kualitas E Passport\MRZReader\obj\x86\Debug\MRZReader.pdb
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\bin\x86\Debug\MRZReader.exe.config
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\bin\x86\Debug\MRZReader.exe
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\bin\x86\Debug\MRZReader.pdb
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\bin\x86\Debug\MMMReaderDotNet40.dll
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\x86\Debug\MRZReader.csproj.AssemblyReference.cache
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\x86\Debug\MRZReader.AlokasiUlang.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\x86\Debug\MRZReader.CatatNomor.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\x86\Debug\MRZReader.EditForm.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\x86\Debug\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\x86\Debug\HLNonBlockingExample.NET.MainForm.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\x86\Debug\MRZReader.ZoomPreview.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\x86\Debug\MRZReader.csproj.GenerateResource.cache
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\x86\Debug\MRZReader.csproj.CoreCompileInputs.cache
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\x86\Debug\MRZReader.csproj.CopyComplete
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\x86\Debug\MRZReader.exe
+C:\IMIGRASI_V2\DPRI\SourceCode\MRZReader\obj\x86\Debug\MRZReader.pdb
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\bin\x86\Debug\MRZReader.exe.config
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\bin\x86\Debug\MRZReader.exe
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\bin\x86\Debug\MRZReader.pdb
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\bin\x86\Debug\MMMReaderDotNet40.dll
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\MRZReader.csproj.AssemblyReference.cache
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\MRZReader.AlokasiUlang.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\MRZReader.CatatNomor.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\HLNonBlockingExample.NET.DataToSend.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\MRZReader.EditForm.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\HLNonBlockingExample.NET.MainForm.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\MRZReader.ZoomPreview.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\MRZReader.csproj.GenerateResource.cache
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\MRZReader.csproj.CoreCompileInputs.cache
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\MRZReader.csproj.CopyComplete
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\MRZReader.exe
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\MRZReader.pdb

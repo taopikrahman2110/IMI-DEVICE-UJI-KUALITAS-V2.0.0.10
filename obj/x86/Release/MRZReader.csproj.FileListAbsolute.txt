@@ -1,0 +1,29 @@
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\bin\x86\Release\MRZReader.exe.config
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\bin\x86\Release\MRZReader.exe
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\bin\x86\Release\MMMReaderDotNet40.dll
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\obj\x86\Release\MRZReader.AlokasiUlang.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\obj\x86\Release\MRZReader.CatatNomor.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\obj\x86\Release\HLNonBlockingExample.NET.DataToSend.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\obj\x86\Release\MRZReader.EditForm.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\obj\x86\Release\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\obj\x86\Release\HLNonBlockingExample.NET.MainForm.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\obj\x86\Release\MRZReader.ZoomPreview.resources
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\obj\x86\Release\MRZReader.csproj.GenerateResource.cache
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\obj\x86\Release\MRZReader.csproj.CoreCompileInputs.cache
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\obj\x86\Release\MRZReader.csproj.CopyComplete
+C:\IMIGRASI_V2\DPRI\SourceCode\mrzreader\obj\x86\Release\MRZReader.exe
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\bin\x86\Release\MRZReader.exe.config
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\bin\x86\Release\MRZReader.exe
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\bin\x86\Release\MMMReaderDotNet40.dll
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Release\MRZReader.csproj.AssemblyReference.cache
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Release\MRZReader.AlokasiUlang.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Release\MRZReader.CatatNomor.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Release\HLNonBlockingExample.NET.DataToSend.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Release\MRZReader.EditForm.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Release\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Release\HLNonBlockingExample.NET.MainForm.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Release\MRZReader.ZoomPreview.resources
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Release\MRZReader.csproj.GenerateResource.cache
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Release\MRZReader.csproj.CoreCompileInputs.cache
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Release\MRZReader.csproj.CopyComplete
+C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Release\MRZReader.exe

@@ -1,0 +1,62 @@
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\bin\Debug\MRZReader.exe
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\bin\Debug\MRZReader.pdb
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\HLNonBlockingExample.NET.DataToSend.resources
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\HLNonBlockingExample.NET.MainForm.resources
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\MRZReader.csproj.GenerateResource.Cache
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\MRZReader.csproj.CoreCompileInputs.cache
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\MRZReader.exe
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\MRZReader.pdb
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\MRZReader.ZoomPreview.resources
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\MRZReader.csprojResolveAssemblyReference.cache
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\MRZReader.AlokasiUlang.resources
+D:\Nico\Work\Project\C# Project\ScanTools\MRZReader\obj\Debug\MRZReader.CatatNomor.resources
+D:\Passport\Uji Kualitas E Passport\MRZReader\bin\Debug\MRZReader.exe.config
+D:\Passport\Uji Kualitas E Passport\MRZReader\bin\Debug\MRZReader.exe
+D:\Passport\Uji Kualitas E Passport\MRZReader\bin\Debug\MRZReader.pdb
+D:\Passport\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.csprojAssemblyReference.cache
+D:\Passport\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.AlokasiUlang.resources
+D:\Passport\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.CatatNomor.resources
+D:\Passport\Uji Kualitas E Passport\MRZReader\obj\Debug\HLNonBlockingExample.NET.DataToSend.resources
+D:\Passport\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.EditForm.resources
+D:\Passport\Uji Kualitas E Passport\MRZReader\obj\Debug\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+D:\Passport\Uji Kualitas E Passport\MRZReader\obj\Debug\HLNonBlockingExample.NET.MainForm.resources
+D:\Passport\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.ZoomPreview.resources
+D:\Passport\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.csproj.GenerateResource.cache
+D:\Passport\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.csproj.CoreCompileInputs.cache
+D:\Passport\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.csproj.CopyComplete
+D:\Passport\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.exe
+D:\Passport\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.pdb
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\bin\Debug\MRZReader.exe.config
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\bin\Debug\MRZReader.exe
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\bin\Debug\MRZReader.pdb
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.csprojAssemblyReference.cache
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.AlokasiUlang.resources
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.CatatNomor.resources
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\obj\Debug\HLNonBlockingExample.NET.DataToSend.resources
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.EditForm.resources
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\obj\Debug\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\obj\Debug\HLNonBlockingExample.NET.MainForm.resources
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.ZoomPreview.resources
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.csproj.GenerateResource.cache
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.csproj.CoreCompileInputs.cache
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.csproj.CopyComplete
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.exe
+D:\PASPOR\Source Code Dekstop\Uji Kualitas E Passport\MRZReader\obj\Debug\MRZReader.pdb
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\bin\Debug\MRZReader.exe.config
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\bin\Debug\MRZReader.exe
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\bin\Debug\MRZReader.pdb
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\Debug\MRZReader.csprojAssemblyReference.cache
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\Debug\MRZReader.AlokasiUlang.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\Debug\MRZReader.CatatNomor.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\Debug\HLNonBlockingExample.NET.DataToSend.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\Debug\MRZReader.EditForm.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\Debug\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\Debug\HLNonBlockingExample.NET.MainForm.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\Debug\MRZReader.ZoomPreview.resources
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\Debug\MRZReader.csproj.GenerateResource.cache
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\Debug\MRZReader.csproj.CoreCompileInputs.cache
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\Debug\MRZReader.csproj.CopyComplete
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\Debug\MRZReader.exe
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\obj\Debug\MRZReader.pdb
+E:\Project Imigrasi\aplikasi paspor\exe uji kualitas 3.3.3.10\MRZReader\bin\Debug\MMMReaderDotNet40.dll
