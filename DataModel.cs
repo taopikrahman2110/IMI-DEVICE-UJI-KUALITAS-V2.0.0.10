@@ -12,5 +12,6 @@ namespace MRZReader
         public string NomorPaspor { get; set; }
         public string NamaLengkap { get; set; }
         public string TanggalLahir { get; set; }
+        public string JenisPaspor { get; set; }
     }
 }

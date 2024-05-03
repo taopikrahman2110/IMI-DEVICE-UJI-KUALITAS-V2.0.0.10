@@ -314,12 +314,38 @@ namespace HLNonBlockingExample.NET
         private Button btnZoomFinger2;
         private Button btnZoomFinger1;
 
+        private string base64UV;
+        private string base64IR;
+        private string base64VIS;
+        private string forename;
+        private string surname;
+        private string kewarganegaraan;
+        private string issuingState;
+        private string gender;
+        private string dob;
+        private string docNumber;
+        private string docType;
+        private string validationResult;
+        private string resultState;
+        private string resultStateDetail;
+
+        private string AAstatus;
+        private string PAstatus;
+        private string CAstatus;
+        private string TAstatus;
+        private string SACstatus;
+        private string DOC_Signer;
+        private string base64Finger1;
+        private string base64Finger2;
+        private string ChipId;
+
 
 
         private string nomorPermohonan;
         private string nomorPaspor;
         private string namaLengkap;
         private string tanggalLahir;
+        private string JenisPaspor;
         DataModel data;
         //private Button btnClose;
         //private Button button2;
@@ -387,196 +413,34 @@ namespace HLNonBlockingExample.NET
             // Initialize helper control to get around .NET 2.0 threadsafe control problem
             _threadHelperControl = new Control();
             _threadHelperControl.CreateControl();
-
-
-
-            if (args.Length == 1)
-            {
-                //example parameter:neviimmrzreader:http://localhost:3000&qwerty12345";
-                string strneviimmrzreader = "neviimmrzreader:";
-                if (args[0].Contains(strneviimmrzreader) && args[0].Length > (strneviimmrzreader).Length)
-                {
-                    string temp = args[0].Substring((strneviimmrzreader).Length);
-                    string[] split = temp.Split('&');
-                    cancelReallocate = split[0];
-                    exchange = split[1];
-                    reallocate = split[2];
-                    saveReallocation = split[3];
-                    failTest = split[4];
-                    successTest = split[5];
-                    setStatus = split[6];
-                    notify = split[7];
-                    login = split[8];
-                    urlSentData = split[9];
-                    urlUpdateUserId = split[10];
-                    namaPemohon = split[11].Replace("_", " ");
-                    noPermohonan = split[12];
-                    tglLahir = split[13];
-                    noPassport = split[14];
-                    idUji = split[15];
-                    idAlokasi = split[16];
-                    userId = split[17];
-                    iauth = split[18];
-                    oldStatus = split[19];
-                    oldStatusDetail = split[20];
-
-                    if (split.Length > 21)
-                    {
-                        tipe = split[21];
-                    }
-                }
-            }
-
-
-            //BIASA, ELEKTRONIK
-            if (tipe == "ELEKTRONIK")
-            {
-                isEpaspor = true;
-            }
-
-            if (!notify.ToUpper().Equals("FALSE"))
-            {
-                urlSailsLock = notify.Replace("notify", "ujiKualitas/flagList");
-                CallSailsLock();
-            }
-
-            if (String.IsNullOrEmpty(cancelReallocate))
-            {
-                cancelReallocate = "http://localhost:1337/restsharp";
-            }
-
-            if (String.IsNullOrEmpty(exchange))
-            {
-                exchange = "http://localhost:1337/restsharp";
-            }
-
-            if (String.IsNullOrEmpty(reallocate))
-            {
-                reallocate = "http://localhost:1337/restsharp";
-            }
-
-            if (String.IsNullOrEmpty(saveReallocation))
-            {
-                saveReallocation = "http://localhost:1337/restsharp";
-            }
-
-            if (String.IsNullOrEmpty(failTest))
-            {
-                failTest = "http://localhost:1337/restsharp";
-            }
-
-            if (String.IsNullOrEmpty(successTest))
-            {
-                successTest = "http://localhost:1337/restsharp";
-            }
-
-            if (String.IsNullOrEmpty(notify))
-            {
-                notify = "http://localhost:1337/restsharp";
-            }
-
-            if (String.IsNullOrEmpty(noPermohonan))
-            {
-                noPermohonan = "-";
-            }
-
-            if (String.IsNullOrEmpty(namaPemohon))
-            {
-                namaPemohon = "-";
-            }
-
-            if (String.IsNullOrEmpty(tglLahir))
-            {
-                tglLahir = "-";
-            }
-            //else
-            //{
-            //    epoch = epoch.AddMilliseconds(Convert.ToDouble(tglLahir));
-            //    tglLahir = epoch.ToString("dd/MM/yyyy");
-            //}
-
-            if (String.IsNullOrEmpty(userId))
-            {
-                userId = "-";
-            }
-
-            if (String.IsNullOrEmpty(noPassport))
-            {
-                noPassport = "-";
-            }
-
-            if (String.IsNullOrEmpty(idUji))
-            {
-                idUji = "-";
-            }
-
-            if (String.IsNullOrEmpty(idAlokasi))
-            {
-                idAlokasi = "-";
-            }
-
-            //login = "http://localhost:8000/alur-mundur/login";
-            //urlSentData = "http://localhost:8089/pengecekan-dpri/adddoc";
-
-            tbNoPermohonan.Text = noPermohonan;
-            tbNamaPemohon.Text = namaPemohon;
-            tbTglLahir.Text = tglLahir;
-            tbNoPassport.Text = noPassport;
-
-            testId.id = idUji;
-            http.token = iauth;
-
-            SetFileNames(tbNoPermohonan.Text);
-
-            Version version = Assembly.GetEntryAssembly().GetName().Version;
-
-            if (isEpaspor)
-            {
-                this.Text = "Electronic Passport Scanner";
-                if (!GetCertsFromNetwork())
-                {
-                    this.Close();
-                }
-            }
-            else
-            {
-                this.Text = "Passport Scanner";
-            }
-            this.Text = this.Text + " - " + version.ToString();
-
-            // Initialize helper control to get around .NET 2.0 threadsafe control problem
-            _threadHelperControl = new Control();
-			_threadHelperControl.CreateControl();
-
-			//
-			// TODO: Add any constructor code after InitializeComponent call
-			//
-		}
-
-
+        }
         public void ProsesData(DataModel data)
         {
             Console.WriteLine("Data Proses ", data);
 
-            namaPemohon = data.NamaLengkap;
+           namaPemohon = data.NamaLengkap;
             noPermohonan = data.NomorPermohonan;
             tglLahir = data.TanggalLahir;
             noPassport = data.NomorPaspor;
 
-            if (noPassport.StartsWith("X"))
+            string Jpaspor = data.JenisPaspor;
+
+            if (Jpaspor.Contains("ELEKTRONIK"))
             {
                 tipe = "ELEKTRONIK";
-            }
-            else
+            }else
             {
                 tipe = "BIASA";
             }
 
-            //BIASA, ELEKTRONIK
+
+            //BIASA, ELEKTRONIK, POLICARBONAT KALAU POLI sama dengan ELEKTRONIK
             if (tipe == "ELEKTRONIK")
             {
                 isEpaspor = true;
             }
+
+           
 
             if (String.IsNullOrEmpty(noPermohonan))
             {
@@ -3337,6 +3201,23 @@ namespace HLNonBlockingExample.NET
 								lblDocumentNumber.Text = codeline.DocNumber;
 								lblDocumentType.Text = codeline.DocType;
 
+                                forename = codeline.Forenames == "" ? "" : codeline.Forenames;
+                                surname = codeline.Surname == "" ? "" : codeline.Surname;
+                                kewarganegaraan = codeline.Nationality;
+                                issuingState = codeline.IssuingState;
+                                gender = codeline.Sex.ToUpper() == "MALE" ? "Laki - Laki" : "Perempuan";
+                                dob = string.Format(
+                                    "{0:00}-{1:00}-{2:00}",
+                                    codeline.DateOfBirth.Day,
+                                    codeline.DateOfBirth.Month,
+                                    codeline.DateOfBirth.Year
+                                );
+                                docNumber = codeline.DocNumber;
+                                docType = codeline.DocType;
+
+
+
+
                                 if ((lblDocumentType.Text.ToUpper() != "PASSPORT") 
                                     && (lblDocumentType.Text.ToUpper() != "TRAVEL DOCUMENT"))
                                 {
@@ -3387,6 +3268,14 @@ namespace HLNonBlockingExample.NET
                         case MMM.Readers.FullPage.DataType.CD_IMAGEIR:
                             {
                                 irImage.Image = aData as Bitmap;
+                                 Bitmap bitmap = irImage.Image as Bitmap;
+                                using (MemoryStream memoryStream = new MemoryStream())
+                                {
+                                    bitmap.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
+                                    byte[] byteBuffer = memoryStream.ToArray();
+                                    string base64String = Convert.ToBase64String(byteBuffer);
+                                    base64IR = base64String;
+                                }
                                 break;
                             }
                         case MMM.Readers.FullPage.DataType.CD_IMAGEVIS:
@@ -3395,6 +3284,14 @@ namespace HLNonBlockingExample.NET
                                 visibleImage.Image = img;
                                 string combinedPath = Path.Combine(tempPath, pasporName);
                                 SaveImagetoTemp(img, combinedPath);
+
+                                using (MemoryStream memoryStream = new MemoryStream())
+                                {
+                                    img.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
+                                    byte[] byteBuffer = memoryStream.ToArray();
+                                    string base64String = Convert.ToBase64String(byteBuffer);
+                                    base64VIS = base64String;
+                                }
                                 break;
                             }
                         case MMM.Readers.FullPage.DataType.CD_IMAGEPHOTO:
@@ -3405,6 +3302,15 @@ namespace HLNonBlockingExample.NET
                         case MMM.Readers.FullPage.DataType.CD_IMAGEUV:
                             {
                                 uvImage.Image = aData as Bitmap;
+                                 Bitmap bitmap = uvImage.Image as Bitmap;
+
+                                using (MemoryStream memoryStream = new MemoryStream())
+                                {
+                                    bitmap.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
+                                    byte[] byteBuffer = memoryStream.ToArray();
+                                    string base64String = Convert.ToBase64String(byteBuffer);
+                                    base64UV = base64String;
+                                }
                                 break;
                             }
                         case MMM.Readers.FullPage.DataType.CD_IMAGEIRREAR:
@@ -3471,6 +3377,20 @@ namespace HLNonBlockingExample.NET
 									codeline.DateOfBirth.Year
 								);
 								lblRFDocNumber.Text = codeline.DocNumber;
+
+                                forename = codeline.Forenames == "" ? "" : codeline.Forenames;
+                                surname = codeline.Surname == "" ? "" : codeline.Surname;
+                                kewarganegaraan = codeline.Nationality;
+                                issuingState = codeline.IssuingState;
+                                gender = codeline.Sex.ToUpper() == "MALE" ? "Laki - Laki" : "Perempuan";
+                                dob = string.Format(
+                                    "{0:00}-{1:00}-{2:00}",
+                                    codeline.DateOfBirth.Day,
+                                    codeline.DateOfBirth.Month,
+                                    codeline.DateOfBirth.Year
+                                );
+                                docNumber = codeline.DocNumber;
+                                docType = codeline.DocType;
 
                                 if (codeline.Line1 != codeline1 
                                      || codeline.Line2 != codeline2)
@@ -3668,6 +3588,7 @@ namespace HLNonBlockingExample.NET
                                 }
                                 thisItem.SubItems.Add(lState.ToString());
                                 this.lblSACStatus.Text = lState.ToString();
+                                SACstatus = lState.ToString();
                                 setLblColor(this.lblSACStatus);
                                 break;
                             }
@@ -3966,7 +3887,7 @@ namespace HLNonBlockingExample.NET
 			}
 		}
 
-		void EventCallback(MMM.Readers.FullPage.EventCode aEventType)
+		async void EventCallback(MMM.Readers.FullPage.EventCode aEventType)
 		{
 			try
 			{
@@ -3979,6 +3900,16 @@ namespace HLNonBlockingExample.NET
 							// You may wish to change the settings immediately after they have 
 							// been loaded - for example, to turn off options that you do not 
 							// want.
+
+                              var dataToSend = new
+                            {
+                                status = "initializing"
+                            };
+
+                            var jsonData = JsonSerializer.Serialize(dataToSend);
+
+                            await SendJsonToClients(jsonData);
+
 							MMM.Readers.FullPage.ReaderSettings settings;
 							MMM.Readers.ErrorCode errorCode = MMM.Readers.FullPage.Reader.GetSettings(
 								out settings
@@ -4131,6 +4062,64 @@ namespace HLNonBlockingExample.NET
 							float docTime = duration.Ticks / System.TimeSpan.TicksPerSecond;
 							statusBar.Panels[1].Text =
 								"Time: " + docTime.ToString() + "s";
+
+                            var scan_foto = new
+                            {
+                                uv = base64UV,
+                                vis = base64VIS,
+                                ir = base64IR
+                            };
+
+                            var scan_data = new
+                            {
+                                surname = surname,
+                                forename = forename,
+                                kewarganegaraan = kewarganegaraan,
+                                issuingState = issuingState,
+                                gender = gender,
+                                dob = dob,
+                                docNumber = docNumber,
+                                docType = docType,
+                                resultState = resultState,
+                                resultStateDetail = resultStateDetail
+                            };
+
+                            var dataToSend = new Dictionary<string, object>();
+                            if (isEpaspor)
+                            {
+                                var scan_epaspor = new
+                                {
+                                    AAstatus = AAstatus,
+                                    PAstatus = PAstatus,
+                                    CAstatus = CAstatus,
+                                    TAstatus = TAstatus,
+                                    SACstatus = SACstatus,
+                                    DOC_Signer = DOC_Signer,
+                                    base64Finger1 = base64Finger1,
+                                    base64Finger2 = base64Finger2,
+                                    ChipId = ChipId
+                                };
+
+                                dataToSend = new Dictionary<string, object>
+                                {
+                                    { "scan_foto", scan_foto },
+                                    { "scan_data", scan_data },
+                                    { "scan_epaspor", scan_epaspor }
+                                };
+                            }
+                            else
+                            {
+                                dataToSend = new Dictionary<string, object>
+                                {
+                                    { "scan_foto", scan_foto },
+                                    { "scan_data", scan_data }
+                                };
+                            }
+
+                            var jsonData = JsonSerializer.Serialize(dataToSend);
+
+                            await SendJsonToClients(jsonData);
+
 							break;
 						}
 				}
@@ -4511,6 +4500,7 @@ namespace HLNonBlockingExample.NET
                     tbHasilUji.Text = status;
                     btnCetakUlang.Enabled = true;
                     btnSerahkan.Enabled = true;
+                     resultState = status;
                 }
             }
             else
@@ -4518,6 +4508,7 @@ namespace HLNonBlockingExample.NET
                 tbHasilUji.Text = status;
                 btnCetakUlang.Enabled = true;
                 btnSerahkan.Enabled = false;
+                 resultState = status;
             }
 
             if (statusLog != "")
@@ -4530,6 +4521,7 @@ namespace HLNonBlockingExample.NET
                     rtbLog.AppendText("\r\n" + "-- " + statusLog);
                 }
             }
+            resultStateDetail = rtbLog.Text;
         }
 
         protected System.DateTime prDocStartTime = System.DateTime.UtcNow;

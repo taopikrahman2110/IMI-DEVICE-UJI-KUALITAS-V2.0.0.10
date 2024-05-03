@@ -65,3 +65,38 @@ C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzre
 C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\MRZReader.csproj.CopyComplete
 C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\MRZReader.exe
 C:\Coding Transforme\IMI-DEVICE\DEVICE-PRINTER-UJI KUALITAS-TERBARU-020524\mrzreader-v2.0.0.10\obj\x86\Debug\MRZReader.pdb
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\MRZReader.exe.config
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\MRZReader.exe
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\MRZReader.pdb
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\MMMReaderDotNet40.dll
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Buffers.dll
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Memory.dll
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Numerics.Vectors.dll
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Text.Encodings.Web.dll
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Text.Json.dll
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Threading.Tasks.Extensions.dll
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.ValueTuple.dll
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Buffers.xml
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Memory.xml
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Numerics.Vectors.xml
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Text.Encodings.Web.xml
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Text.Json.xml
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.Threading.Tasks.Extensions.xml
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\bin\x86\Debug\System.ValueTuple.xml
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\obj\x86\Debug\MRZReader.csproj.AssemblyReference.cache
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\obj\x86\Debug\MRZReader.AlokasiUlang.resources
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\obj\x86\Debug\MRZReader.CatatNomor.resources
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\obj\x86\Debug\HLNonBlockingExample.NET.DataToSend.resources
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\obj\x86\Debug\MRZReader.EditForm.resources
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\obj\x86\Debug\HLNonBlockingExample.NET.FormBACKeyCorrection.resources
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\obj\x86\Debug\HLNonBlockingExample.NET.MainForm.resources
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\obj\x86\Debug\MRZReader.ZoomPreview.resources
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\obj\x86\Debug\MRZReader.csproj.GenerateResource.cache
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\obj\x86\Debug\MRZReader.csproj.CoreCompileInputs.cache
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\obj\x86\Debug\MRZReader.csproj.CopyComplete
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\obj\x86\Debug\MRZReader.exe
+C:\Coding Transforme\IMI-DEVICE\IMI-DEVICE-UJI-KUALITAS-V.2.0.0.10\IMI-DEVICE-UJI-KUALITAS-V2.0.0.10\obj\x86\Debug\MRZReader.pdb
