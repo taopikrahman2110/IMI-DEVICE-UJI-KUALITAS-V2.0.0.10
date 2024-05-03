@@ -15,6 +15,13 @@ using System.Reflection;
 using MMM.Readers.FullPage;
 using System.Configuration;
 using System.Security.Principal;
+using System.Net.WebSockets;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Collections.Generic;
+using System.Text.Json;
+using System.Net.NetworkInformation;
 
 namespace HLNonBlockingExample.NET
 {
@@ -23,6 +30,10 @@ namespace HLNonBlockingExample.NET
 	/// </summary>
 	public class MainForm : System.Windows.Forms.Form
 	{
+
+        private static List<WebSocket> connectedClients = new List<WebSocket>();
+        private ServerSocket mServerSocket;
+        string msgCodeRequest = "";
         private System.ComponentModel.IContainer components;
 		private System.Windows.Forms.MainMenu MainMenu;
 		private System.Windows.Forms.MenuItem FileMenu;
@@ -303,6 +314,16 @@ namespace HLNonBlockingExample.NET
         private Button btnZoomFinger2;
         private Button btnZoomFinger1;
 
+
+
+        private string nomorPermohonan;
+        private string nomorPaspor;
+        private string namaLengkap;
+        private string tanggalLahir;
+        DataModel data;
+        //private Button btnClose;
+        //private Button button2;
+
         // Helper control to get around .NET 2.0 threadsafe control problem
         private Control _threadHelperControl;
 
@@ -314,14 +335,61 @@ namespace HLNonBlockingExample.NET
 			InitializeComponent();
 
             exeFolderPath = AppDomain.CurrentDomain.BaseDirectory;
-            InitTempDirectory(exeFolderPath);          
-            //using (StreamWriter sWR = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "Catch_Param.txt"))
-            //{
-            //    for(int i=0;i<args.Length;i++)
-            //    {
-            //        sWR.WriteLine(args[i]);
-            //    }
-            //}
+            InitTempDirectory(exeFolderPath);
+
+            Thread t = new Thread(new ThreadStart(StartServer));
+            t.Start();
+            // Get all network interfaces on the system
+            NetworkInterface[] interfaces = NetworkInterface.GetAllNetworkInterfaces();
+            string serverUrl = null;
+
+            foreach (NetworkInterface networkInterface in interfaces)
+            {
+                if (networkInterface.OperationalStatus == OperationalStatus.Up &&
+                    networkInterface.NetworkInterfaceType != NetworkInterfaceType.Loopback &&
+                    networkInterface.NetworkInterfaceType != NetworkInterfaceType.Tunnel)
+                {
+                    IPInterfaceProperties ipProperties = networkInterface.GetIPProperties();
+                    UnicastIPAddressInformationCollection ipAddresses = ipProperties.UnicastAddresses;
+
+                    foreach (UnicastIPAddressInformation ipAddress in ipAddresses)
+                    {
+                        if (ipAddress.Address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork &&
+                            !ipAddress.Address.IsIPv6LinkLocal &&
+                            !ipAddress.Address.IsIPv6Multicast &&
+                            !ipAddress.Address.IsIPv6SiteLocal &&
+                            !IPAddress.IsLoopback(ipAddress.Address))
+                        {
+                            Console.WriteLine("Local IP Address: " + ipAddress.Address);
+                            serverUrl = $"http://{ipAddress.Address}:4488/";
+                            break; // Found a suitable IP address, exit the loop
+                        }
+                    }
+
+                    if (serverUrl != null)
+                    {
+                        break; // Found a suitable IP address, exit the outer loop
+                    }
+                }
+            }
+
+            if (serverUrl != null)
+            {
+                Console.WriteLine($"Starting WebSocket server at: {serverUrl}");
+                StartWebSocketServer("http://localhost:4488/", args);
+            }
+            else
+            {
+                Console.WriteLine("No suitable IP address found.");
+            }
+
+
+            // Initialize helper control to get around .NET 2.0 threadsafe control problem
+            _threadHelperControl = new Control();
+            _threadHelperControl.CreateControl();
+
+
+
             if (args.Length == 1)
             {
                 //example parameter:neviimmrzreader:http://localhost:3000&qwerty12345";
@@ -484,6 +552,103 @@ namespace HLNonBlockingExample.NET
 			// TODO: Add any constructor code after InitializeComponent call
 			//
 		}
+
+
+        public void ProsesData(DataModel data)
+        {
+            Console.WriteLine("Data Proses ", data);
+
+            namaPemohon = data.NamaLengkap;
+            noPermohonan = data.NomorPermohonan;
+            tglLahir = data.TanggalLahir;
+            noPassport = data.NomorPaspor;
+
+            if (noPassport.StartsWith("X"))
+            {
+                tipe = "ELEKTRONIK";
+            }
+            else
+            {
+                tipe = "BIASA";
+            }
+
+            //BIASA, ELEKTRONIK
+            if (tipe == "ELEKTRONIK")
+            {
+                isEpaspor = true;
+            }
+
+            if (String.IsNullOrEmpty(noPermohonan))
+            {
+                noPermohonan = "-";
+            }
+
+            if (String.IsNullOrEmpty(namaPemohon))
+            {
+                namaPemohon = "-";
+            }
+
+            if (String.IsNullOrEmpty(tglLahir))
+            {
+                tglLahir = "-";
+            }
+
+            if (String.IsNullOrEmpty(userId))
+            {
+                userId = "-";
+            }
+
+            if (String.IsNullOrEmpty(noPassport))
+            {
+                noPassport = "-";
+            }
+
+            if (String.IsNullOrEmpty(idUji))
+            {
+                idUji = "-";
+            }
+
+            if (String.IsNullOrEmpty(idAlokasi))
+            {
+                idAlokasi = "-";
+            }
+
+
+
+            tbNoPermohonan.Text = noPermohonan;
+            tbNamaPemohon.Text = namaPemohon;
+            tbTglLahir.Text = tglLahir;
+            tbNoPassport.Text = noPassport;
+
+            testId.id = idUji;
+            http.token = iauth;
+
+            SetFileNames(tbNoPermohonan.Text);
+
+            Version version = Assembly.GetEntryAssembly().GetName().Version;
+
+            if (isEpaspor)
+            {
+                this.Text = "Electronic Passport Scanner";
+                if (!GetCertsFromNetwork())
+                {
+                    this.Close();
+                }
+            }
+            else
+            {
+                this.Text = "Passport Scanner";
+            }
+            this.Text = this.Text + " - " + version.ToString();
+
+            // Initialize helper control to get around .NET 2.0 threadsafe control problem
+            _threadHelperControl = new Control();
+            _threadHelperControl.CreateControl();
+            Initialise();
+
+            // Initialize helper control to get around .NET 2.0 threadsafe control problem
+
+        }
 
         private void SetFileNames(string noPermohonan)
         {
@@ -4935,6 +5100,125 @@ namespace HLNonBlockingExample.NET
             else
             {
                 isCloseFromEdit = false;
+            }
+        }
+
+        public void StartServer()
+        {
+            mServerSocket = new ServerSocket(9000);
+            mServerSocket.WaitForConnection();
+        }
+
+        
+
+        public async void StartWebSocketServer(string url, string[] args)
+        {
+            HttpListener listener = new HttpListener();
+            listener.Prefixes.Add(url);
+            listener.Start();
+            Console.WriteLine($"Listening on {url}...");
+
+            while (true)
+            {
+                HttpListenerContext context = await listener.GetContextAsync();
+                if (context.Request.IsWebSocketRequest)
+                {
+                    WebSocketContext webSocketContext = await context.AcceptWebSocketAsync(null);
+                    WebSocket webSocket = webSocketContext.WebSocket;
+                    Console.WriteLine("WebSocket connection established");
+
+                    connectedClients.Add(webSocket);
+
+                    try
+                    {
+                        await HandleWebSocketCommunication(webSocket, args);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Exception: {ex.Message}");
+                        if (ex.InnerException != null)
+                        {
+                            Console.WriteLine($"Inner Exception: {ex.InnerException.Message}");
+                        }
+                    }
+
+                    //await HandleWebSocketCommunication(webSocket);
+                }
+                else
+                {
+                    context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                    context.Response.Close();
+                }
+            }
+        }
+
+        public async Task HandleWebSocketCommunication(WebSocket webSocket, string[] args)
+        {
+            OnWebSocketConnected(webSocket);
+
+            byte[] buffer = new byte[1024];
+            WebSocketReceiveResult result;
+
+            do
+            {
+                ArraySegment<byte> arraySegment = new ArraySegment<byte>(buffer);
+                result = await webSocket.ReceiveAsync(arraySegment, CancellationToken.None);
+
+                if (result.MessageType == WebSocketMessageType.Text)
+                {
+                    string message = Encoding.UTF8.GetString(buffer, 0, result.Count);
+                    Console.WriteLine($"Received message: {message}");
+                    //byte[] responseBuffer = Encoding.UTF8.GetBytes($"{message}");
+                    //await webSocket.SendAsync(new ArraySegment<byte>(responseBuffer), WebSocketMessageType.Text, true, CancellationToken.None);
+
+                    JsonDocument jsonDocument = JsonDocument.Parse(message);
+                    JsonElement root = jsonDocument.RootElement;
+
+
+                    JsonElement msgCode = root.GetProperty("msgCode");
+
+                    DataModel data = JsonSerializer.Deserialize<DataModel>(msgCode.ToString());
+
+                    Console.WriteLine(data.NomorPermohonan);
+                    ProsesData(data);
+                }
+            }
+            while (!result.CloseStatus.HasValue);
+
+            await webSocket.CloseAsync(result.CloseStatus.Value, result.CloseStatusDescription, CancellationToken.None);
+
+            OnWebSocketDisconnected(webSocket);
+        }
+
+
+
+        public void OnWebSocketConnected(WebSocket webSocket)
+        {
+            Console.WriteLine("WebSocket connected.");
+            // Add your custom logic for handling a new WebSocket connection here.
+            // For example, you can add the connected WebSocket to a list of connected clients.
+        }
+
+        public void OnWebSocketDisconnected(WebSocket webSocket)
+        {
+            Console.WriteLine("WebSocket disconnected.");
+            // Add your custom logic for handling a WebSocket disconnection here.
+            // For example, you can remove the disconnected WebSocket from the list of connected clients.
+        }
+
+        public async Task SendJsonToClients(string json)
+        {
+            foreach (var client in connectedClients)
+            {
+                try
+                {
+                    byte[] data = Encoding.UTF8.GetBytes(json);
+                    await client.SendAsync(new ArraySegment<byte>(data), WebSocketMessageType.Text, true, CancellationToken.None);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Failed to send message to a client: {ex.Message}");
+                }
             }
         }
     }
