@@ -347,6 +347,8 @@ namespace HLNonBlockingExample.NET
         private string tanggalLahir;
         private string JenisPaspor;
         DataModel data;
+        private Button BtnHapus;
+
         //private Button btnClose;
         //private Button button2;
 
@@ -779,10 +781,11 @@ namespace HLNonBlockingExample.NET
             this.tbHasilUji = new System.Windows.Forms.TextBox();
             this.label88 = new System.Windows.Forms.Label();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.label99 = new System.Windows.Forms.Label();
             this.rtbLog = new System.Windows.Forms.RichTextBox();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.BtnHapus = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.StatePanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TimePanel)).BeginInit();
             this.TimingsTab.SuspendLayout();
@@ -1016,7 +1019,7 @@ namespace HLNonBlockingExample.NET
             this.TimingsTab.Location = new System.Drawing.Point(4, 22);
             this.TimingsTab.Name = "TimingsTab";
             this.TimingsTab.Padding = new System.Windows.Forms.Padding(20);
-            this.TimingsTab.Size = new System.Drawing.Size(1354, 492);
+            this.TimingsTab.Size = new System.Drawing.Size(1268, 492);
             this.TimingsTab.TabIndex = 2;
             this.TimingsTab.Text = "Timings";
             this.TimingsTab.UseVisualStyleBackColor = true;
@@ -1034,7 +1037,7 @@ namespace HLNonBlockingExample.NET
             this.TimingsList.HideSelection = false;
             this.TimingsList.Location = new System.Drawing.Point(20, 20);
             this.TimingsList.Name = "TimingsList";
-            this.TimingsList.Size = new System.Drawing.Size(1314, 452);
+            this.TimingsList.Size = new System.Drawing.Size(1228, 452);
             this.TimingsList.TabIndex = 1;
             this.TimingsList.UseCompatibleStateImageBehavior = false;
             this.TimingsList.View = System.Windows.Forms.View.Details;
@@ -1064,7 +1067,7 @@ namespace HLNonBlockingExample.NET
             this.UHFTab.Controls.Add(this.groupBox4);
             this.UHFTab.Location = new System.Drawing.Point(4, 22);
             this.UHFTab.Name = "UHFTab";
-            this.UHFTab.Size = new System.Drawing.Size(1354, 492);
+            this.UHFTab.Size = new System.Drawing.Size(1268, 492);
             this.UHFTab.TabIndex = 3;
             this.UHFTab.Text = "UHF";
             this.UHFTab.UseVisualStyleBackColor = true;
@@ -1176,7 +1179,7 @@ namespace HLNonBlockingExample.NET
             // 
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1354, 492);
+            this.tabPage1.Size = new System.Drawing.Size(1268, 492);
             this.tabPage1.TabIndex = 1;
             this.tabPage1.Text = "RFID";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1955,7 +1958,7 @@ namespace HLNonBlockingExample.NET
             this.ImagesRearTab.Controls.Add(this.label94);
             this.ImagesRearTab.Location = new System.Drawing.Point(4, 22);
             this.ImagesRearTab.Name = "ImagesRearTab";
-            this.ImagesRearTab.Size = new System.Drawing.Size(1354, 492);
+            this.ImagesRearTab.Size = new System.Drawing.Size(1268, 492);
             this.ImagesRearTab.TabIndex = 4;
             this.ImagesRearTab.Text = "Images Rear";
             // 
@@ -2931,6 +2934,7 @@ namespace HLNonBlockingExample.NET
             this.btnSerahkan.TabIndex = 48;
             this.btnSerahkan.Text = "Serahkan Passport";
             this.btnSerahkan.UseVisualStyleBackColor = true;
+            this.btnSerahkan.Visible = false;
             this.btnSerahkan.Click += new System.EventHandler(this.btnSerahkan_Click);
             // 
             // btnCetakUlang
@@ -2942,6 +2946,7 @@ namespace HLNonBlockingExample.NET
             this.btnCetakUlang.TabIndex = 47;
             this.btnCetakUlang.Text = "Cetak Ulang";
             this.btnCetakUlang.UseVisualStyleBackColor = true;
+            this.btnCetakUlang.Visible = false;
             this.btnCetakUlang.Click += new System.EventHandler(this.btnCetakUlang_Click);
             // 
             // tbHasilUji
@@ -2963,8 +2968,6 @@ namespace HLNonBlockingExample.NET
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.btnEdit);
-            this.groupBox12.Controls.Add(this.btnClose);
             this.groupBox12.Controls.Add(this.label99);
             this.groupBox12.Controls.Add(this.rtbLog);
             this.groupBox12.Controls.Add(this.btnSerahkan);
@@ -2977,26 +2980,6 @@ namespace HLNonBlockingExample.NET
             this.groupBox12.TabIndex = 49;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Hasil";
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Location = new System.Drawing.Point(188, 62);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(80, 35);
-            this.btnEdit.TabIndex = 52;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Location = new System.Drawing.Point(274, 62);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(80, 35);
-            this.btnClose.TabIndex = 51;
-            this.btnClose.Text = "Tutup";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label99
             // 
@@ -3017,11 +3000,46 @@ namespace HLNonBlockingExample.NET
             this.rtbLog.TabIndex = 49;
             this.rtbLog.Text = "";
             // 
+            // btnEdit
+            // 
+            this.btnEdit.Enabled = false;
+            this.btnEdit.Location = new System.Drawing.Point(333, 655);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(80, 35);
+            this.btnEdit.TabIndex = 52;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Visible = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(708, 655);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(167, 35);
+            this.btnClose.TabIndex = 51;
+            this.btnClose.Text = "Tutup Aplikasi";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // BtnHapus
+            // 
+            this.BtnHapus.Location = new System.Drawing.Point(524, 655);
+            this.BtnHapus.Name = "BtnHapus";
+            this.BtnHapus.Size = new System.Drawing.Size(166, 35);
+            this.BtnHapus.TabIndex = 53;
+            this.BtnHapus.Text = "Hapus Data Pemohon";
+            this.BtnHapus.UseVisualStyleBackColor = true;
+            this.BtnHapus.Click += new System.EventHandler(this.BtnHapusData_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.ClientSize = new System.Drawing.Size(1284, 728);
             this.ControlBox = false;
+            this.Controls.Add(this.BtnHapus);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.groupBox12);
             this.Controls.Add(this.groupBox11);
             this.Controls.Add(this.statusBar);
@@ -3104,9 +3122,14 @@ namespace HLNonBlockingExample.NET
 		/// The main entry point for the application.
 		/// </summary>
 		[STAThread]
-		static void Main(string[] args)
+		static void Main()
 		{
+
+            string[] args = new string[] { "neviimmrzreader:http://host.docker.internal:9030/alokasi-paspor/dokim/cancel-reallocate/&http://host.docker.internal:9030/alokasi-paspor/dokim/exchange/&http://host.docker.internal:9030/alokasi-paspor/dokim/reallocate/&http://host.docker.internal:9030/alokasi-paspor/dokim/save-reallocation/&http://host.docker.internal:9030/alokasi-paspor/dokim/fail-test/&http://host.docker.internal:9030/alokasi-paspor/dokim/success-test/&http://host.docker.internal:9030/alokasi-paspor/dokim/set-status/&http://host.docker.internal:9091/notify&http://host.docker.internal:9030/auth-api/alur-mundur/login&http://host.docker.internal:9030/pengecekan-mrtd/pengecekan-dpri/adddoc&http://host.docker.internal:9030/pengecekan-mrtd/pengecekan-dpri/update-userid&MUHAMMAD_SOBIRIN&5539000000014862&17-01-1991&C5726112&7ea90a6f-a85a-4bf1-a761-a77a6c1f16cf&a54e7589-553c-4e24-baed-a9642df969ce&43e07f6d-e3a2-4138-bfe6-652b3bdb056d&eyJhbGciOiJIUzI1NiJ9.eyJ3b3JrX3VuaXQiOnsiaWQiOiIyN0FBIiwiaWRTYXR1YW5LZXJqYSI6IjI3QUEiLCJuYW1hU2F0dWFuS2VyamEiOiJLSlJJIEpPSE9SIEJBSFJVIiwiZGVza3JpcHNpU2F0dWFuS2VyamEiOiJLSlJJIEpPSE9SIEJBSFJVIiwiYWxhbWF0IjoiTm8uNDYsIEphbGFuIFRhYXQsIDgwMTAwIEpvaG9yIEJhaHJ1IiwidGVsZXBvbiI6Iis2MDcgLSAyMjcgNDE4OC8yMjEzMjQzIiwiZmF4IjoiKzYwNy0yMjEgMzI0NiIsInN0cnVrdHVyU2F0dWFuS2VyamEiOm51bGwsImluZHVrU2F0dWFuS2VyamEiOm51bGwsImtvZGVVbml0IjoiMjdBQSIsImtvZGVDYWJhbmciOiI1NTMiLCJhY3RpdmUiOnRydWV9LCJyb2xlIjoiU1VQRVIiLCJuYW1lIjoiU3VwZXIiLCJpZCI6IjQzZTA3ZjZkLWUzYTItNDEzOC1iZmU2LTY1MmIzYmRiMDU2ZCIsImV4cCI6MTU4OTIyMzQ4MSwidXNlcm5hbWUiOiIxMjM0NSIsIm9uT2ZmIjp0cnVlfQ.YbNttOZjl-r7hLO2jBVBkjdZfXhnF8swVqWtKA1BFvs&AKTIF&TERCETAK&BIASA" };
+
             string strneviimmrzreader = "neviimmrzreader:";
+
+
             if (args.Length == 1 && args[0].Contains("neviimmrzreader:") && args[0].Length > (strneviimmrzreader).Length)
             {
                 MainForm form = new MainForm(args);
@@ -5211,6 +5234,39 @@ namespace HLNonBlockingExample.NET
                 {
                     Console.WriteLine($"Failed to send message to a client: {ex.Message}");
                 }
+            }
+        }
+
+
+        private void BtnHapusData_Click(object sender, EventArgs e)
+        {
+            Hapus();
+        }
+
+        public void Hapus()
+        {
+            try
+            {
+                DialogResult result = MessageBox.Show("Apakah Anda Yakin Ingin Menghapus Data Pemohon?", "Warning", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    namaPemohon = "";
+                    noPermohonan = "";
+                    tglLahir = "";
+                    noPassport = "";
+                    tbNamaPemohon.Text = "";
+                    tbNoPermohonan.Text = "";
+                    tbNamaPemohon.Text = "";
+                    tbTglLahir.Text = "";
+                    tbNoPassport.Text = "";
+                }
+
+
+            }
+            catch (Exception)
+            {
+
             }
         }
     }
