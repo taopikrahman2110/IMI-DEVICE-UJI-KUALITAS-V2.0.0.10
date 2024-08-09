@@ -23,7 +23,9 @@
     <StartWorkingDirectory>C:\Program Files %28x86%29\Thales\Gemalto Document Reader SDK\3.7.1.17\Bin\</StartWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <StartWorkingDirectory>C:\Program Files %28x86%29\Thales\Gemalto Document Reader SDK\3.7.1.17\Bin</StartWorkingDirectory>
-    <StartArguments>neviimmrzreader:http://host.docker.internal:9030/alokasi-paspor/dokim/cancel-reallocate/&amp;http://host.docker.internal:9030/alokasi-paspor/dokim/exchange/&amp;http://host.docker.internal:9030/alokasi-paspor/dokim/reallocate/&amp;http://host.docker.internal:9030/alokasi-paspor/dokim/save-reallocation/&amp;http://host.docker.internal:9030/alokasi-paspor/dokim/fail-test/&amp;http://host.docker.internal:9030/alokasi-paspor/dokim/success-test/&amp;http://host.docker.internal:9030/alokasi-paspor/dokim/set-status/&amp;http://host.docker.internal:9091/notify&amp;http://host.docker.internal:9030/auth-api/alur-mundur/login&amp;http://host.docker.internal:9030/pengecekan-mrtd/pengecekan-dpri/adddoc&amp;http://host.docker.internal:9030/pengecekan-mrtd/pengecekan-dpri/update-userid&amp;TESTING_ECOVER_HID&amp;9989000000000035&amp;08-11-1990&amp;X0000003&amp;af56a3d7-c94a-4a8c-b959-457fb31f77d8&amp;05134249-4db7-11ec-bdfd-fa163edcd403&amp;04efd04a-a6c0-45e5-a5ef-84a1224d2ab1&amp;eyJhbGciOiJIUzI1NiJ9.eyJ3b3JrX3VuaXQiOnsiaWQiOiI5OVhZIiwiaWRTYXR1YW5LZXJqYSI6IjQwOTI3MiIsIm5hbWFTYXR1YW5LZXJqYSI6IkRJUkVLVE9SQVQgU0lTVElLIiwiZGVza3JpcHNpU2F0dWFuS2VyamEiOiJLYW50b3IgSW1pZ3Jhc2kgU0lTVElLIiwiYWxhbWF0IjoiSmwuIEguIFIuIFJhc3VuYSBTYWlkIEthdi5YLTYgTm9tb3IgOCwgS3VuaW5nYW4tSmFrYXJ0YSBTZWxhdGFuIiwidGVsZXBvbiI6IjUyMjUwMjgiLCJmYXgiOiI1MjI1MDI4Iiwic3RydWt0dXJTYXR1YW5LZXJqYSI6bnVsbCwiaW5kdWtTYXR1YW5LZXJqYSI6bnVsbCwia29kZVVuaXQiOiI5OVhZIiwia29kZUNhYmFuZyI6Ijk5OCIsImFjdGl2ZSI6dHJ1ZX0sInJvbGUiOiJURVNUSU5HIEZMT1ciLCJuYW1lIjoiVVNFUiBURVNUSU5HIiwiaWQiOiIwNGVmZDA0YS1hNmMwLTQ1ZTUtYTVlZi04NGExMjI0ZDJhYjEiLCJleHAiOjE2NzQ1ODM3MzIsInVzZXJuYW1lIjoiNTQzMjEiLCJvbk9mZiI6dHJ1ZX0.JuPWVHwtg1245OoSj13spVLw5XMRH5A3HFEhHFM5UEs&amp;AKTIF&amp;TERCETAK&amp;ELEKTRONIK</StartArguments>
+    <StartWorkingDirectory>
+    </StartWorkingDirectory>
+    <StartArguments>
+    </StartArguments>
   </PropertyGroup>
 </Project>

@@ -389,7 +389,7 @@ namespace HLNonBlockingExample.NET
                             !IPAddress.IsLoopback(ipAddress.Address))
                         {
                             Console.WriteLine("Local IP Address: " + ipAddress.Address);
-                            serverUrl = $"http://{ipAddress.Address}:4488/";
+                            serverUrl = $"http://{ipAddress.Address}:4477/";
                             break; // Found a suitable IP address, exit the loop
                         }
                     }
@@ -404,7 +404,7 @@ namespace HLNonBlockingExample.NET
             if (serverUrl != null)
             {
                 Console.WriteLine($"Starting WebSocket server at: {serverUrl}");
-                StartWebSocketServer("http://localhost:4488/", args);
+                StartWebSocketServer("http://localhost:4477/", args);
             }
             else
             {
@@ -1019,7 +1019,7 @@ namespace HLNonBlockingExample.NET
             this.TimingsTab.Location = new System.Drawing.Point(4, 22);
             this.TimingsTab.Name = "TimingsTab";
             this.TimingsTab.Padding = new System.Windows.Forms.Padding(20);
-            this.TimingsTab.Size = new System.Drawing.Size(1268, 492);
+            this.TimingsTab.Size = new System.Drawing.Size(626, 492);
             this.TimingsTab.TabIndex = 2;
             this.TimingsTab.Text = "Timings";
             this.TimingsTab.UseVisualStyleBackColor = true;
@@ -1037,7 +1037,7 @@ namespace HLNonBlockingExample.NET
             this.TimingsList.HideSelection = false;
             this.TimingsList.Location = new System.Drawing.Point(20, 20);
             this.TimingsList.Name = "TimingsList";
-            this.TimingsList.Size = new System.Drawing.Size(1228, 452);
+            this.TimingsList.Size = new System.Drawing.Size(586, 452);
             this.TimingsList.TabIndex = 1;
             this.TimingsList.UseCompatibleStateImageBehavior = false;
             this.TimingsList.View = System.Windows.Forms.View.Details;
@@ -1067,7 +1067,7 @@ namespace HLNonBlockingExample.NET
             this.UHFTab.Controls.Add(this.groupBox4);
             this.UHFTab.Location = new System.Drawing.Point(4, 22);
             this.UHFTab.Name = "UHFTab";
-            this.UHFTab.Size = new System.Drawing.Size(1268, 492);
+            this.UHFTab.Size = new System.Drawing.Size(626, 492);
             this.UHFTab.TabIndex = 3;
             this.UHFTab.Text = "UHF";
             this.UHFTab.UseVisualStyleBackColor = true;
@@ -1179,7 +1179,7 @@ namespace HLNonBlockingExample.NET
             // 
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1268, 492);
+            this.tabPage1.Size = new System.Drawing.Size(626, 492);
             this.tabPage1.TabIndex = 1;
             this.tabPage1.Text = "RFID";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1548,7 +1548,7 @@ namespace HLNonBlockingExample.NET
             this.flowLayoutPanel1.Controls.Add(this.gbEPassport);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1262, 489);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1254, 489);
             this.flowLayoutPanel1.TabIndex = 37;
             this.flowLayoutPanel1.WrapContents = false;
             // 
@@ -1852,7 +1852,7 @@ namespace HLNonBlockingExample.NET
             this.gbEPassport.Controls.Add(this.validatedList);
             this.gbEPassport.Location = new System.Drawing.Point(703, 3);
             this.gbEPassport.Name = "gbEPassport";
-            this.gbEPassport.Size = new System.Drawing.Size(643, 481);
+            this.gbEPassport.Size = new System.Drawing.Size(644, 481);
             this.gbEPassport.TabIndex = 36;
             this.gbEPassport.TabStop = false;
             this.gbEPassport.Text = "E-Passport";
@@ -1958,7 +1958,7 @@ namespace HLNonBlockingExample.NET
             this.ImagesRearTab.Controls.Add(this.label94);
             this.ImagesRearTab.Location = new System.Drawing.Point(4, 22);
             this.ImagesRearTab.Name = "ImagesRearTab";
-            this.ImagesRearTab.Size = new System.Drawing.Size(1268, 492);
+            this.ImagesRearTab.Size = new System.Drawing.Size(626, 492);
             this.ImagesRearTab.TabIndex = 4;
             this.ImagesRearTab.Text = "Images Rear";
             // 
@@ -3125,6 +3125,9 @@ namespace HLNonBlockingExample.NET
 		static void Main()
 		{
 
+            string workingDirectory = @"C:\Program Files (x86)\Thales\Gemalto Document Reader SDK\3.7.1.17\Bin";
+            SetWorkingDirectory(workingDirectory);
+
             string[] args = new string[] { "neviimmrzreader:http://host.docker.internal:9030/alokasi-paspor/dokim/cancel-reallocate/&http://host.docker.internal:9030/alokasi-paspor/dokim/exchange/&http://host.docker.internal:9030/alokasi-paspor/dokim/reallocate/&http://host.docker.internal:9030/alokasi-paspor/dokim/save-reallocation/&http://host.docker.internal:9030/alokasi-paspor/dokim/fail-test/&http://host.docker.internal:9030/alokasi-paspor/dokim/success-test/&http://host.docker.internal:9030/alokasi-paspor/dokim/set-status/&http://host.docker.internal:9091/notify&http://host.docker.internal:9030/auth-api/alur-mundur/login&http://host.docker.internal:9030/pengecekan-mrtd/pengecekan-dpri/adddoc&http://host.docker.internal:9030/pengecekan-mrtd/pengecekan-dpri/update-userid&MUHAMMAD_SOBIRIN&5539000000014862&17-01-1991&C5726112&7ea90a6f-a85a-4bf1-a761-a77a6c1f16cf&a54e7589-553c-4e24-baed-a9642df969ce&43e07f6d-e3a2-4138-bfe6-652b3bdb056d&eyJhbGciOiJIUzI1NiJ9.eyJ3b3JrX3VuaXQiOnsiaWQiOiIyN0FBIiwiaWRTYXR1YW5LZXJqYSI6IjI3QUEiLCJuYW1hU2F0dWFuS2VyamEiOiJLSlJJIEpPSE9SIEJBSFJVIiwiZGVza3JpcHNpU2F0dWFuS2VyamEiOiJLSlJJIEpPSE9SIEJBSFJVIiwiYWxhbWF0IjoiTm8uNDYsIEphbGFuIFRhYXQsIDgwMTAwIEpvaG9yIEJhaHJ1IiwidGVsZXBvbiI6Iis2MDcgLSAyMjcgNDE4OC8yMjEzMjQzIiwiZmF4IjoiKzYwNy0yMjEgMzI0NiIsInN0cnVrdHVyU2F0dWFuS2VyamEiOm51bGwsImluZHVrU2F0dWFuS2VyamEiOm51bGwsImtvZGVVbml0IjoiMjdBQSIsImtvZGVDYWJhbmciOiI1NTMiLCJhY3RpdmUiOnRydWV9LCJyb2xlIjoiU1VQRVIiLCJuYW1lIjoiU3VwZXIiLCJpZCI6IjQzZTA3ZjZkLWUzYTItNDEzOC1iZmU2LTY1MmIzYmRiMDU2ZCIsImV4cCI6MTU4OTIyMzQ4MSwidXNlcm5hbWUiOiIxMjM0NSIsIm9uT2ZmIjp0cnVlfQ.YbNttOZjl-r7hLO2jBVBkjdZfXhnF8swVqWtKA1BFvs&AKTIF&TERCETAK&BIASA" };
 
             string strneviimmrzreader = "neviimmrzreader:";
@@ -3144,7 +3147,29 @@ namespace HLNonBlockingExample.NET
             }
 		}
 
-		void DataCallbackThreadHelper(MMM.Readers.FullPage.DataType aDataType, object aData)
+        private static void SetWorkingDirectory(string directoryPath)
+        {
+            try
+            {
+                // Check if the directory exists
+                if (Directory.Exists(directoryPath))
+                {
+                    // Set the current directory to the specified path
+                    Environment.CurrentDirectory = directoryPath;
+                    Console.WriteLine("Working directory set to: " + Environment.CurrentDirectory);
+                }
+                else
+                {
+                    Console.WriteLine("Directory does not exist: " + directoryPath);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error setting working directory: " + ex.Message);
+            }
+        }
+
+        void DataCallbackThreadHelper(MMM.Readers.FullPage.DataType aDataType, object aData)
 		{
 			if (_threadHelperControl.InvokeRequired)
 			{
@@ -3194,8 +3219,57 @@ namespace HLNonBlockingExample.NET
 			try
 			{
 				LogDataItem(aDataType, aData);
+                Bitmap ResizeImage(Image image, int width, int height)
+                {
+                    var destRect = new Rectangle(0, 0, width, height);
+                    var destImage = new Bitmap(width, height);
 
-				if (aData != null)
+                    destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+
+                    using (var graphics = Graphics.FromImage(destImage))
+                    {
+                        graphics.CompositingMode = System.Drawing.Drawing2D.CompositingMode.SourceCopy;
+                        graphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+                        graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                        graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                        graphics.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+
+                        using (var wrapMode = new ImageAttributes())
+                        {
+                            wrapMode.SetWrapMode(System.Drawing.Drawing2D.WrapMode.TileFlipXY);
+                            graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode);
+                        }
+                    }
+
+                    return destImage;
+                }
+                string ConvertToBase64WithQuality(Bitmap bitmap, long quality)
+                {
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        var encoderParameters = new EncoderParameters(1);
+                        encoderParameters.Param[0] = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, quality);
+                        var imageCodecInfo = GetEncoder(ImageFormat.Jpeg);
+
+                        bitmap.Save(memoryStream, imageCodecInfo, encoderParameters);
+                        return Convert.ToBase64String(memoryStream.ToArray());
+                    }
+                }
+                ImageCodecInfo GetEncoder(ImageFormat format)
+                {
+                    ImageCodecInfo[] codecs = ImageCodecInfo.GetImageDecoders();
+                    foreach (ImageCodecInfo codec in codecs)
+                    {
+                        if (codec.FormatID == format.Guid)
+                        {
+                            return codec;
+                        }
+                    }
+                    return null;
+                }
+
+
+                if (aData != null)
 				{
 					switch (aDataType)
 					{
@@ -3303,20 +3377,54 @@ namespace HLNonBlockingExample.NET
                             }
                         case MMM.Readers.FullPage.DataType.CD_IMAGEVIS:
                             {
-                                Image img = aData as Bitmap;
-                                visibleImage.Image = img;
-                                string combinedPath = Path.Combine(tempPath, pasporName);
-                                SaveImagetoTemp(img, combinedPath);
+                                //Image img = aData as Bitmap;
+                                //visibleImage.Image = img;
+                                //string combinedPath = Path.Combine(tempPath, pasporName);
+                                //SaveImagetoTemp(img, combinedPath);
 
-                                using (MemoryStream memoryStream = new MemoryStream())
+                                //using (MemoryStream memoryStream = new MemoryStream())
+                                //{
+                                //    img.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
+                                //    byte[] byteBuffer = memoryStream.ToArray();
+                                //    string base64String = Convert.ToBase64String(byteBuffer);
+                                //    base64VIS = base64String;
+                                //}
+                                //break;
+
+                                Image img = aData as Bitmap;
+                                if (img != null)
                                 {
-                                    img.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
-                                    byte[] byteBuffer = memoryStream.ToArray();
-                                    string base64String = Convert.ToBase64String(byteBuffer);
+                                    visibleImage.Image = img;
+                                    string combinedPath = Path.Combine(tempPath, pasporName);
+                                    SaveImagetoTemp(img, combinedPath);
+
+                                    // Resize the image
+                                    int newWidth = 400; 
+                                    int newHeight = 300; 
+                                    Bitmap resizedImage = ResizeImage(img, newWidth, newHeight);
+
+                                    // Adjust quality to ensure the Base64 string is under 50 KB
+                                    string base64String = null;
+                                    long quality = 80; 
+                                    while (true)
+                                    {
+                                        base64String = ConvertToBase64WithQuality(resizedImage, quality);
+                                        if ((base64String.Length * 3 / 4) <= 30 * 1024 || quality <= 10)
+                                        {
+                                            break;
+                                        }
+                                        quality -= 5;
+                                    }
+
                                     base64VIS = base64String;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Invalid image data.");
                                 }
                                 break;
                             }
+
                         case MMM.Readers.FullPage.DataType.CD_IMAGEPHOTO:
                             {
                                 photoImage.Image = aData as Bitmap;
@@ -4088,9 +4196,7 @@ namespace HLNonBlockingExample.NET
 
                             var scan_foto = new
                             {
-                                uv = base64UV,
-                                vis = base64VIS,
-                                ir = base64IR
+                                Vis = base64VIS
                             };
 
                             var scan_data = new
@@ -5099,6 +5205,7 @@ namespace HLNonBlockingExample.NET
             if (result == DialogResult.Yes)
             {
                 this.Close();
+                Environment.Exit(0);
             }
         }
 
