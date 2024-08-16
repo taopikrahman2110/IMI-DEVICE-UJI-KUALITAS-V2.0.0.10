@@ -4196,7 +4196,8 @@ namespace HLNonBlockingExample.NET
 
                             var scan_foto = new
                             {
-                                Vis = base64VIS
+                                vis = base64VIS
+
                             };
 
                             var scan_data = new
